@@ -1,0 +1,14 @@
+server:
+  port: 10002
+
+spring:
+  application:
+    name: camunda-client
+
+camunda:
+  bpm:
+    client:
+      worker-id: camunda-client
+      base-url: http://localhost:10001/engine-rest
+      max-tasks: 1
+      async-response-timeout: 10000
